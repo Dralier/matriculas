@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario Patente</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        {% include "nav.html" %}
+
+        <form class="form-patente" action="/turnos" method="POST">
+            <div>
+                <label for="">Patente</label>
+                <input type="text" name="patente" id="patente" pattern="^([a-zA-Z]{2,3}[/-]?[0-9]{3}[/-]?[a-zA-Z]{0,2})?$" />
+            </div>
+            <div>
+                <label for="">Año</label>
+                <input type="number" name="year" id="year" min=1900 max=3000/>
+            </div>
+            <div>
+                <label for="">Kilometraje</label>
+                <input type="number" name="km" id="km" min=0 />
+            </div>
+            <button>Consultar Turnos</button>
+        </form>
+
+        <script src="./js/valida.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    font-family: arial;
+    background-color: beige;
+}
+
+.form-patente{
+   
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 2rem !important;
+    
+}
+.form-patente > div {
+    display: flex;
+    margin-top: 1rem;
+}
+.form-patente label{
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.form-patente input{
+    flex-grow: 1;
+}
+.form-patente button{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+.mes-revision{
+    font-size: 16pt;
+    color: red;
+}
+
+nav{
+background-color: black;
+color:White;
+height: 70px;
+display: flex;
+align-items: center;
+padding: 0 1rem;
+
+
+}
